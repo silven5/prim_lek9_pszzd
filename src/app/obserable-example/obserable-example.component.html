@@ -1,0 +1,28 @@
+<article class="flex">
+  <h2>Прості приклади</h2>
+  <section class="flex flex-row flex-wrap">
+    <button (click)="ras()" class="btn">Приклад 1</button>
+    <button (click)="ras1()" class="btn">Приклад 2</button>
+    <button (click)="stop1()" class="btn btn-stop">Стоп Приклад 2</button>
+    <button (click)="ras2()" class="btn">Приклад 3</button>
+    <button (click)="stop2()" class="btn btn-stop">Стоп Приклад 3</button>
+    <button (click)="ras3()" class="btn">Приклад 4</button>
+    <button (click)="ras3_1()" class="btn">Приклад 4.1</button>
+    <button (click)="ras4_2()" class="btn">Приклад 4.2</button>
+  </section>
+  <section>
+    <h2>Приклад з GitHub</h2>
+    <label>
+      Введіть користувача
+      <input type="text" #input />
+    </label>
+    <button (click)="ras5_1()" class="btn">приклад 5</button>
+    <div class="flex">
+      <div *ngFor="let elem of gitHubUsers">{{ elem }}</div>
+    </div>
+  </section>
+  <section>
+    <h2>Observables vs Promises</h2>
+    <button (click)="ob_prom()" class="btn">Приклад 6</button>
+  </section>
+</article>

@@ -1,0 +1,17 @@
+<article class="flex">
+  <h3>Приклад 3</h3>
+  <table class="table table-bordered">
+    <tr>
+      <th>ID</th>
+      <th>Body</th>
+      <th>Title</th>
+      <th>UserID</th>
+    </tr>
+    <tr *ngFor="let post of posts">
+      <td>{{ post.id }}</td>
+      <td>{{ post.body }}</td>
+      <td>{{ post.title }}</td>
+      <td>{{ post.userId }}</td>
+    </tr>
+  </table>
+</article>
